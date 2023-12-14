@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome</title>
+    <style>
+        h1 {
+            background-color: yellow;
+            color: red;
+            text-align-last: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: cyan;">
+    <h1>DETAILS</h1>
+    <p style="color: red;">Sai Mokshitha</p>
+    <p>2200090255</p>
+    <p style="color: purple; font-weight: bold; font-style: italic;">CSIT</p>
+    <a href="address.html"><address>address</address></a>
+
+    <br>
+    <br>
+    <br>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">S.No</th>
+            <th style="border: 1px solid black;">NAME</th>
+            <th style="border: 1px solid black;">REG.No</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">1</td>
+            <td style="border: 1px solid black;">Mokshitha</td>
+            <td style="border: 1px solid black;">2200090255</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">2</td>
+            <td style="border: 1px solid black;">Pandu</td>
+            <td style="border: 1px solid black;">2200090254</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <form>
+        Integer 1: <input type="number" id="num1" name="num1"><br><br>
+        Integer 2: <input type="number" id="num2" name="num2"><br><br>
+        <input type="button" value="ADD" onclick="addinteger()">
+        <input type="button" value="SUBTRACT" onclick="subtractInteger()"> <!-- Corrected function name -->
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function addinteger() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var sum = parseInt(n1) + parseInt(n2);
+            document.getElementById("result").innerHTML = "The Sum is: " + sum;
+        }
+
+        function subtractInteger() { // Corrected function name
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var difference = parseInt(n1) - parseInt(n2);
+            document.getElementById("result").innerHTML = "The Difference is: " + difference;
+        }
+    </script>
+
+</body>
+
+</html>
